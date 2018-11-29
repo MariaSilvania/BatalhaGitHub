@@ -7,9 +7,9 @@ body{
     }
     
     .formulario{
-     display: flex;
-     justify-content: center;
-     align-items: center;   
+     display: flex; 
+    justify-content: center;
+    align-items: center;   
     width: 500px;   
     height: 80vh;
     background-color: rgb(52, 149, 240); 
@@ -23,6 +23,11 @@ body{
     margin-top: 50px;
     }
     
+    #logo{
+     height: 100px;
+     border-radius:360px;    
+    }
+
     #button-ok{
      height: 30px;  
      border-radius: 5px; 
