@@ -19,8 +19,8 @@ Aplicação feita em Javascript, HTML e CSS, através de requisição de API do 
 
 
 ## Divisão de tarefas do grupo: 
--Beatriz Justiniano - JS/ Requisição
--Danielle Boczkowski - Gerenciamento do Projeto e testes
--Fernanda Batista - Readme e Pitch
--Maria Silvania - JS/ Requisição
--Veronica Gomes - HTML / CSS
+- Beatriz Justiniano - JS/ Requisição
+- Danielle Boczkowski - Gerenciamento do Projeto e testes
+- Fernanda Batista - Readme e Pitch
+- Maria Silvania - JS/ Requisição
+- Veronica Gomes - HTML / CSS
