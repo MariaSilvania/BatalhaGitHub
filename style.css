@@ -35,3 +35,34 @@ body{
     margin-top:40px; 
     }
     
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 500px;
+    width: 600px;
+    }
+    
+    #jogador-1{
+    background-color: blue;
+    width: 200px;
+    height: 200px;  
+    margin: 40px;  
+    }
+    
+    #jogador-2{
+    background-color:yellow;
+    width: 200px;
+    height: 200px;
+    margin: 40px;    
+    }
+    
+    .index-resultado{
+    display: flex; 
+    }
+
+    #tabela-jogador-1, #tabela-jogador-2, th, td{
+    border: 1px solid black; 
+    text-align: center;   
+    }
