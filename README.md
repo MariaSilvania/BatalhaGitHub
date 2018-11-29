@@ -8,7 +8,7 @@ Os critérios de comparação da batalha são:
 3- Seguindo: +5 pontos cada;
 4- Mais estrelas no GitHub (soma total de todos os repositórios): +100 pontos cada;
 5- Gists: +5 pontos cada;
-6- Critério a escolher
+6- Foto de perfil: +10 pontos.
 
 
 Orientações para realização do projeto: 
