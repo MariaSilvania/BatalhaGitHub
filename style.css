@@ -7,31 +7,44 @@ body{
     }
     
     .formulario{
-     display: flex; 
+    display: flex; 
     justify-content: center;
     align-items: center;   
-    width: 500px;   
-    height: 80vh;
-    background-color: rgb(52, 149, 240); 
+    width: 600px;   
+    height: 90vh;
+    border-radius:10px; 
+    background-image: linear-gradient(#ba55d3,darkblue);
     }
     
     #input-jogador-2, #input-jogador-1{
     height: 30px;   
-    width: 180px; 
+    width: 190px; 
     margin: 10px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
     }
     
     #logo{
      height: 100px;
      border-radius:360px;    
     }
+    #versus{
+    height: 40px;
+    margin-top:80px; 
+    }
+
+    .img-logo{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
 
     #button-ok{
-     height: 30px;  
+     height: 30px; 
+     width: 200px;
      border-radius: 5px; 
-     background-color: aliceblue;
+     background-color: aquamarine;
+     font-weight: bold;
     }
     
     .button-teste, h1{
