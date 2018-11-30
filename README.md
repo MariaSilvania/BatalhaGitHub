@@ -26,6 +26,6 @@ Aplicação feita em Javascript, HTML e CSS, através de requisição de API do 
 - Veronica Gomes - HTML / CSS
 
 ## Pendências
-Resultado do vencedor e total na tabela está calculando apenas os dois primeiros;
+Resultado do vencedor e no total na tabela está calculando apenas os dois primeiros;
 
 
