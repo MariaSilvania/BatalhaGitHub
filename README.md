@@ -24,3 +24,8 @@ Aplicação feita em Javascript, HTML e CSS, através de requisição de API do 
 - Fernanda Batista - Readme e Pitch
 - Maria Silvania - JS/ Requisição
 - Veronica Gomes - HTML / CSS
+
+## Pendências
+Resultado do vencedor e total na tabela está calculando apenas os dois primeiros;
+
+
