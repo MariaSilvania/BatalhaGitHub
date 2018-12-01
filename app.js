@@ -14,10 +14,10 @@ function pegarUser1(user) {
             var div2 = document.getElementById("jogador-1");
             div2.innerHTML = "";
             var obj = JSON.parse(xhttp.responseText);
-            var tabela = document.createElement('table');
-
-            var td = document.createElement('td');
-            var td2 = document.createElement('td');
+            var tabela = document.createElement('table');   
+           
+            var td = document.createElement('td');   
+            var td2 = document.createElement('td');   
             var td3 = document.createElement('td');
             var tr = document.createElement('tr');
             td.append("CRITÉRIOS");
@@ -28,26 +28,29 @@ function pegarUser1(user) {
             tr.append(td3);
             tabela.append(tr);
 
-            var td = document.createElement('td');
-            var td2 = document.createElement('td');
-            var td3 = document.createElement('td');
+            var td = document.createElement('td');   
+            var td2 = document.createElement('td');  
+            var td3 = document.createElement('td'); 
             var tr = document.createElement('tr');
             td.append("Repositories");
             tr.append(td);
             td2.append(obj.public_repos);
             tr.append(td2);
+
             var totalReposit = obj.public_repos * 20;
             td3.append(totalReposit);
             tr.append(td3);
             tabela.append(tr);
-            var td = document.createElement('td');
-            var td2 = document.createElement('td');
-            var td3 = document.createElement('td');
+
+            var td = document.createElement('td');   
+            var td2 = document.createElement('td');   
+            var td3 = document.createElement('td');   
             var tr = document.createElement('tr');
             td.append("Followers");
             tr.append(td);
             td2.append(obj.followers);
             tr.append(td2);
+
             var totalFollowers = obj.followers * 10;
             td3.append(totalFollowers);
             tr.append(td3);
@@ -59,9 +62,10 @@ function pegarUser1(user) {
             var tr = document.createElement('tr');
             td.append("Following");
             tr.append(td);
-            td2.append(obj.Following);
+            td2.append(obj.following);
             tr.append(td2);
-            td3.append("30");
+            var totalFollowing = obj.following * 5;
+            td3.append(totalFollowing);
             tr.append(td3);
             tabela.append(tr);
 
@@ -71,9 +75,9 @@ function pegarUser1(user) {
             var tr = document.createElement('tr');
             td.append("STARS");
             tr.append(td);
-            td2.append(obj.public_gists);
+            td2.append("0");
             tr.append(td2);
-            td3.append("10");
+            td3.append("0");
             tr.append(td3);
             tabela.append(tr);
 
@@ -83,9 +87,10 @@ function pegarUser1(user) {
             var tr = document.createElement('tr');
             td.append("GISTS");
             tr.append(td);
-            td2.append("5");
+            td2.append(obj.public_gists);
             tr.append(td2);
-            td3.append("20");
+            var totalGists = obj.public_gists * 5;
+            td3.append(totalGists);
             tr.append(td3);
             tabela.append(tr);
             
@@ -95,12 +100,20 @@ function pegarUser1(user) {
             var tr = document.createElement('tr');
             td.append("Profile picture");
             tr.append(td);
-            td2.append("1");
-            tr.append(td2);
-            td3.append("10");
+            var avatar_url = obj.avatar_url;
+            if(avatar_url !== ""){
+                var resultFoto = "1";
+                td2.append(resultFoto);
+                tr.append(td2);
+                td3.append("10");
+            }else{
+                td2.append("0");
+                tr.append(td2);
+                td3.append("0");
+            }
             tr.append(td3);
             tabela.append(tr);
-
+            
             div2.append(tabela);
         }
     };
@@ -163,9 +176,10 @@ function pegarUser2(user) {
             var tr = document.createElement('tr');
             td.append("Following");
             tr.append(td);
-            td2.append(obj.Following);
+            td2.append(obj.following);
             tr.append(td2);
-            td3.append("30");
+            var totalFollowing = obj.following * 5;
+            td3.append(totalFollowing);
             tr.append(td3);
             tabela.append(tr);
 
@@ -175,9 +189,9 @@ function pegarUser2(user) {
             var tr = document.createElement('tr');
             td.append("STARS");
             tr.append(td);
-            td2.append(obj.public_gists);
+            td2.append("0");
             tr.append(td2);
-            td3.append("10");
+            td3.append("0");
             tr.append(td3);
             tabela.append(tr);
 
@@ -187,9 +201,10 @@ function pegarUser2(user) {
             var tr = document.createElement('tr');
             td.append("GISTS");
             tr.append(td);
-            td2.append("2");
+            td2.append(obj.public_gists);
             tr.append(td2);
-            td3.append("20");
+            var totalGists = obj.public_gists * 5;
+            td3.append(totalGists);
             tr.append(td3);
             tabela.append(tr);
             
@@ -199,15 +214,22 @@ function pegarUser2(user) {
             var tr = document.createElement('tr');
             td.append("Profile picture");
             tr.append(td);
-            td2.append("1");
-            tr.append(td2);
-            td3.append("10");
+            var avatar_url = obj.avatar_url;
+            if(avatar_url !== ""){
+                var resultFoto = "1";
+                td2.append(resultFoto);
+                tr.append(td2);
+                td3.append("10");
+            }else{
+                td2.append("0");
+                tr.append(td2);
+                td3.append("0");
+            }
             tr.append(td3);
             tabela.append(tr);
             
             div2.append(tabela);
         }
-
     };
     xhttp.open("GET", `https://api.github.com/users/${user}`, true);
     xhttp.send();
